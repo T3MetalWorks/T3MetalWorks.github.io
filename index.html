@@ -2,8 +2,8 @@
 <script src="/anime-master/lib/anime.js"></script>
 <style type="text/css">
 :root {
-  --g1: rgb(82, 108, 224);
-  --g2: rgb(39, 60, 200);
+  --g1: rgb(106, 213, 217);
+  --g2: rgb(23, 113, 133);
   --g3: rgb(165, 169, 245);
   --z1: rgb(240,244,236);
   --z2: rgb(212,206,70);
@@ -22,7 +22,7 @@
   }
 }
 body {
-  animation: background-pan 8s linear infinite;
+  animation: background-pan 10s linear infinite;
   background: linear-gradient(to right, var(--g1),var(--g2),var(--g3),var(--g1));
   background-size: 200%;
   height: 100vh;
@@ -99,8 +99,9 @@ body.toggled > #tiles > .tile:hover {
 }
 
 #icon {
-  color: rgba(255, 255, 255, 0.15);
-  font-size: 80vmin;
+  color: var(--z5);
+  font-size: 48px;
+  font-family: "Rubik", sans-serif;
   opacity: 0;
   pointer-events: none;
   transition: opacity 1200ms ease;
@@ -180,7 +181,7 @@ body.menu-toggled > .meta-link > span {
 
       <span class="fancy">T3 Metal Works</span>
     </h1>
-
+<p id="icon" class="centered">Manufacturing - Fabrication - Casting</p>
 
 
 <script>
@@ -249,17 +250,3 @@ window.onresize = () => createGrid();
 
 </script>
 
-<!DOCTYPE html>
-<html>
-
-<body>
-
-<h1>T3 Metal Works</h1>
-
-<p>Manufacturing - Fabrication - Casting</p>
-
-<p2></p2>
-
-</body>
-
-</html>
