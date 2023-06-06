@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 .box a {
   color: transparent; /* Make the text transparent to reveal the background */
-  background: linear-gradient(45deg, black, black);
+  background: linear-gradient(45deg, black);
   -webkit-background-clip: text;
   text-decoration: none;
   transition: color 0.3s ease-in-out; /* Added for hover effects */

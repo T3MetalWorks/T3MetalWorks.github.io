@@ -34,7 +34,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  background: linear-gradient(45deg, darkorange, orange, palegoldenrod);
+  background: linear-gradient(45deg, darkorange, orange, lightorange, palegoldenrod, lightgray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -60,26 +60,16 @@ nav ul li a:hover {
 }
 
 .box {
-  width: 34%;
   border: 1px solid black;
   padding: 10px;
-  margin: 10px auto;
+  margin: 10px;
   text-align: center;
   font-family: 'Futura', sans-serif;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 20px; /* Increased from 10px to 20px to round the corners more */
   background-color: rgba(255, 255, 255, 0.6);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Add this media query to adjust the layout for smaller screens */
-@media screen and (max-width: 600px) {
-  .box {
-      width: 90%; /* Boxes fill most of the screen width */
-      height: 150px; /* Increase the height to make the boxes easier to tap */
-      font-size: 16px; /* Increase the font size to make the text easier to read */
-  }
+  transition: all 0.3s ease-in-out; /* Added for hover effects */
 }
 
 .box:hover {
@@ -89,11 +79,10 @@ nav ul li a:hover {
 
 .box a {
   color: transparent; /* Make the text transparent to reveal the background */
-  background: linear-gradient(45deg, black, black);
+  background: linear-gradient(45deg, darkgrey, palegoldenrod);
   -webkit-background-clip: text;
   text-decoration: none;
   transition: color 0.3s ease-in-out; /* Added for hover effects */
-  width: 35%;
 }
 
 .box a:hover {
@@ -104,28 +93,4 @@ nav ul li a:hover {
 .box-image {
   width: 50%;
   height: auto;
-}
-
-.contact-us {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.email-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-family: 'Futura', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  background-color: darkorange;
-  border: none;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.email-button:hover {
-  background-color: orange;
 }

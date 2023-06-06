@@ -82,6 +82,8 @@ nav ul li a:hover {
   }
 }
 
+
+
 .box:hover {
   transform: scale(1.05); /* This will make the box slightly larger when hovered over */
   background-color: rgba(255, 255, 255, 0.8); /* This will make the box less transparent when hovered over */
@@ -89,7 +91,7 @@ nav ul li a:hover {
 
 .box a {
   color: transparent; /* Make the text transparent to reveal the background */
-  background: linear-gradient(45deg, black, black);
+  background: linear-gradient(45deg, black, darkgrey);
   -webkit-background-clip: text;
   text-decoration: none;
   transition: color 0.3s ease-in-out; /* Added for hover effects */
@@ -104,28 +106,4 @@ nav ul li a:hover {
 .box-image {
   width: 50%;
   height: auto;
-}
-
-.contact-us {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.email-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-family: 'Futura', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  background-color: darkorange;
-  border: none;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.email-button:hover {
-  background-color: orange;
 }
