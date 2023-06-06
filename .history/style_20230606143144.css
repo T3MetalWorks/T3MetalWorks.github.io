@@ -1,0 +1,131 @@
+body {
+  font-family: 'Futura', sans-serif;
+  background: linear-gradient(45deg, darkorange, orange, palegoldenrod);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: 'Futura', sans-serif;
+  /* Add Futura font to navbar */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  background: linear-gradient(45deg, darkorange, orange, palegoldenrod);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+nav ul li a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  /* Reduce the width of the container */
+  margin-top: 60px;
+  /* To ensure the content does not hide under the navbar */
+}
+
+.column {
+  flex: 50%;
+}
+
+.box {
+  width: 34%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add this media query to adjust the layout for smaller screens */
+@media screen and (max-width: 600px) {
+  .box {
+      width: 90%; /* Boxes fill most of the screen width */
+      height: 150px; /* Increase the height to make the boxes easier to tap */
+      font-size: 16px; /* Increase the font size to make the text easier to read */
+  }
+}
+
+.box:hover {
+  transform: scale(1.05); /* This will make the box slightly larger when hovered over */
+  background-color: rgba(255, 255, 255, 0.8); /* This will make the box less transparent when hovered over */
+}
+
+.box a {
+  color: transparent; /* Make the text transparent to reveal the background */
+  background: linear-gradient(45deg, black, black);
+  -webkit-background-clip: text;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Added for hover effects */
+  width: 35%;
+}
+
+.box a:hover {
+  color: white; /* Change the text color to white when hovered over */
+}
+
+
+.box-image {
+  width: 50%;
+  height: auto;
+}
+
+.contact-us {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-family: 'Futura', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.email-button:hover {
+  background-color: orange;
+}
